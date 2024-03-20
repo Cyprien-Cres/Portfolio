@@ -1,6 +1,6 @@
 function Resume() {
   return (
-    <div className="page resume">
+    <div className="resume">
       Resume page
     </div>
   )
