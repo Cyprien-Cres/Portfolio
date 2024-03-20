@@ -6,6 +6,7 @@
   justify-content: space-between;
 
   .username {
+    cursor: pointer;
     a {
       text-decoration: none;
 
@@ -14,26 +15,45 @@
       }
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
+    }
+
+    &:hover {
+      transform: translateY(-8%);
+      transition: 200ms;
     }
   }
 
   .menu {
-    height: 40px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+    a {
+      &:hover {
+        transform: translateY(-15%);
+        transition: 200ms;
+      }
+    }
+
+    .active {
+      margin-top: 8px;
+      border-bottom: 7px solid;
+      border-image: linear-gradient(90deg, rgba(230,100,101,1) 0%, rgba(145,152,229,1) 100%) 1;
+    }
+
     button {
-      font-size: 1rem;
-      height: 100%;
+      font-size: 1.1rem;
+      height: 38%;
       margin: 8px;
-      padding: 0 8px;
+      padding: 0px 8px;
       background-color: transparent;
       border: none;
       cursor: pointer;
-
-      &:hover {
-        background-color: #f3f3f5;
-        transition-duration: 500ms;
-        border-radius: 5px;
+      img {
+        height: 25px;
+        width: 25px;
       }
     }
   }
