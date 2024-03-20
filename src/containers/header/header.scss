@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   .username {
     cursor: pointer;
+    margin-left: 16px;
     a {
       text-decoration: none;
 
@@ -23,6 +23,10 @@
       transform: translateY(-8%);
       transition: 200ms;
     }
+
+    @media screen and (max-width:768px) {
+      font-size: 1rem;
+    }
   }
 
   .menu {
@@ -34,6 +38,8 @@
       &:hover {
         transform: translateY(-15%);
         transition: 200ms;
+        background-color: #e5e7eb5b;
+        border-radius: 5px;
       }
     }
 
@@ -55,6 +61,59 @@
         height: 25px;
         width: 25px;
       }
+    }
+
+    .sun {
+      margin-right: 16px;
+      padding-right: 0px;
+
+      @media screen and (max-width:768px) {
+        margin-right: 0px;
+      }
+    }
+
+    .little-menu {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 54px;
+      left: 50%;
+      height: 212px;
+      width: 375px;
+      transform: translate(-50%, 0%);
+      border-bottom: 1px solid black;
+      background-color: white;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        a {
+          &:hover {
+            transform: translateX(-5%);
+            transition: 200ms;
+            background-color: #e5e7eb5b;
+            border-radius: 5px;
+          }
+
+          button {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+  }
+
+  .hidden {
+    display: none;
+
+    @media screen and (max-width:768px) {
+      display: flex;
     }
   }
 }

@@ -7,10 +7,21 @@
     width: 40vh;
     height: 40vh;
     margin-right: 2rem;
+    margin-left: 16px;
     border-radius: 50%;
     padding: 0.75rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
     box-sizing: border-box;
+
+    @media screen and (max-width:768px) {
+      width: 35vh;
+      height: 35vh;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width:1024px) {
+      margin-right: 16px;
+    }
   }
   .home-txt {
     display: flex;
@@ -18,9 +29,10 @@
     align-items: center;
     justify-content: space-around;
     height: 40vh;
+    margin-right: 16px;
     .home-about-txt {
       margin: 0px;
-      font-size: 3rem;
+      font-size: 2.9rem;
       font-weight: bold;
 
       span {
@@ -28,14 +40,20 @@
         color: transparent;
       }
 
-      @media screen and (max-width:1280px) {
+      @media screen and (max-width:1440px) {
         font-size: 2rem;
+        margin-top: 30px;
       }
 
       @media screen and (max-width:1024px) {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         text-align: center;
         margin-top: 30px;
+      }
+
+      @media screen and (max-width:768px) {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
       }
     }
     ul {
@@ -53,12 +71,16 @@
           cursor: default;
         }
 
-        @media screen and (max-width:1280px) {
-          font-size: 1.2rem;
+        @media screen and (max-width:1440px) {
+          font-size: 1.4rem;
         }
 
         @media screen and (max-width:1024px) {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
+        }
+
+        @media screen and (max-width:768px) {
+          font-size: 1rem;
         }
       }
 
@@ -81,16 +103,32 @@
             color: black;
           }
         }
+
+        @media screen and (max-width:1440px) {
+          font-size: 2.7rem;
+        }
+
+        @media screen and (max-width:768px) {
+          font-size: 2rem;
+        }
       }
 
       @media screen and (max-width:1024px) {
         padding-left: 0px;
       }
     }
+
+    @media screen and (max-width:1024px) {
+      margin-right: 0px;
+    }
   }
 
   @media screen and (max-width:1024px) {
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (max-width:768px) {
+    margin-top: 40px;
   }
 }
