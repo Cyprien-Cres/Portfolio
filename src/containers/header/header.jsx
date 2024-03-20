@@ -11,6 +11,11 @@ function Header() {
 
   if (window.matchMedia("(min-width: 768px)").matches){
     return <div className="header">
+      <div className="username">
+        <Link to={"/"}>
+          <h1>Cyprien.</h1>
+        </Link>
+      </div>
       <div className= "menu">
         <Link to={"/Projects"} className={isProjects ? "active" : ""}>
           <button>Projets</button>
@@ -31,6 +36,11 @@ function Header() {
     </div>
   } else {
     return <div className="header">
+      <div className="username">
+        <Link to={"/"}>
+          <h1>Cyprien.</h1>
+        </Link>
+      </div>
       <div className= "menu">
         <Link to={"/Projects"} className={isProjects ? "active" : ""}>
           <button>Projets</button>
