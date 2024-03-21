@@ -1,7 +1,10 @@
+import "./Projects.scss"
+import Card from "../../components/card/Card"
+
 function Projects() {
   return (
     <div className="projects">
-      Projects page
+      <Card />
     </div>
   )
 }
