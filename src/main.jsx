@@ -5,10 +5,24 @@ import Header from "./containers/header/header"
 import Footer from "./containers/footer/footer"
 import Home from "./pages/home/Home"
 import About from "./pages/About"
-import Projects from "./pages/Projects"
+import Projects from "./pages/projects/Projects"
 import Resume from "./pages/Resume"
 import Error from "./pages/Error"
 import "./main.scss"
+
+const cursor = document.querySelector('.cursor')
+
+document.addEventListener('mousemove', e => {
+  cursor.setAttribute('style', 'top:'+(e.pageY - 7)+"px; left:"+(e.pageX - 7)+"px;")
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add('expand')
+
+  setTimeout(() => {
+    cursor.classList.remove("expand")
+  }, 500)
+})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
