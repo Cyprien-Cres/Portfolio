@@ -4,7 +4,7 @@ import "./Home.scss"
 function Home() {
   return (
     <div className="home">
-      <img src={mypicture} alt="Picture of me" />
+      <img src={mypicture} alt="Picture of me"/>
       <div className="home-txt">
         <p className="home-about-txt">
         Hello, je suis <span>Cyprien</span> 🤚<br/ >

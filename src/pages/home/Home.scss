@@ -68,7 +68,6 @@
         &:hover {
           transform: translateY(-15%);
           transition: 200ms;
-          cursor: default;
         }
 
         @media screen and (max-width:1440px) {
@@ -99,6 +98,7 @@
         font-size: 3rem;
         margin: 15px 15px 0px 15px;
         a {
+          cursor: none;
           &:visited {
             color: black;
           }
