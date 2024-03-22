@@ -36,4 +36,20 @@ body {
     pointer-events: none;
     z-index: 11;
   }
+
+  .expand {
+    animation: Anim1 .5s;
+  }
+
+  @keyframes Anim1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
