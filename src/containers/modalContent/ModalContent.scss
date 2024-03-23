@@ -40,6 +40,10 @@
     font-size: 1.1rem;
     width: 90%;
     margin: 0 auto 25px auto;
+
+    @media screen and (max-width:1440px) {
+      font-size: 1rem;
+    }
   }
 
   .link-projects {
