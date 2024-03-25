@@ -24,6 +24,11 @@
         li {
           list-style-type: none;
           margin-bottom: 16px;
+
+          &:hover {
+            transform: translateY(-15%);
+            transition: 200ms;
+          }
         }
 
         .swagger {
@@ -45,6 +50,11 @@
         list-style-type: none;
         margin-bottom: 16px;
         font-size: 1.5rem;
+
+        &:hover {
+          transform: translateY(-15%);
+          transition: 200ms;
+        }
       }
     }
   }
