@@ -7,7 +7,7 @@ function Home() {
       <img src={mypicture} alt="Picture of me"/>
       <div className="home-txt">
         <p className="home-about-txt">
-        Hello, je suis <span>Cyprien</span> 🤚<br/ >
+        Hello, je suis <span className="firstname">Cyprien</span> <span className="hand">🤚</span><br/ >
         Je suis Développeur Front-End.
         </p>
         <ul className="home-about-li">
