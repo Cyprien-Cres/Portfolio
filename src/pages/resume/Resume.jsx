@@ -1,3 +1,5 @@
+import "./Resume.scss"
+
 function Resume() {
   return (
     <div className="resume">
