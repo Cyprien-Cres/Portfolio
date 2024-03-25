@@ -11,7 +11,7 @@ function About() {
           <span>cypriencres $</span> cd aboutme
         </p>
         <p className="paraph">
-          <span>aboutme <span className="branch">(main)</span> $ </span> Bonjour! Je m'appel cyprien. Je suis développeur web. J'ai étudier chez OpenClassRooms, je suis très curieux et j'aime apprendre de nouvelles choses. Je serai heureux d'acquérir plus d'exprérience dans le domaine du développement web. 
+          <span>aboutme <span className="branch">(main)</span> $ </span> Bonjour! Je m'appelle cyprien. Je suis développeur web. J'ai étudier chez OpenClassRooms, je suis très curieux et j'aime apprendre de nouvelles choses. Je serai heureux d'acquérir plus d'exprérience dans le domaine du développement web.
         </p>
       </div>
       <Tabbar />
