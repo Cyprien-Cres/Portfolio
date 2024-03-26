@@ -39,9 +39,9 @@ function Header() {
                 <Link to={"/About"} onClick={close}>
                   <button>Présentation</button>
                 </Link>
-                <Link to={"/Resume"} onClick={close}>
+                <a href="src\assets\documents\CV_Cyprien_Cres.pdf" target="_blank">
                   <button>CV</button>
-                </Link>
+                </a>
                 <a href="mailto:kanki.dev@gmail.com" onClick={close}>
                   <button>Contact</button>
                 </a>
@@ -61,9 +61,9 @@ function Header() {
         <Link to={"/About"} className={isAbout ? "active" : ""}>
           <button>Présentation</button>
         </Link>
-        <Link to={"/Resume"} className={isResume ? "active" : ""}>
+        <a href="src\assets\documents\CV_Cyprien_Cres.pdf" target="_blank">
           <button>CV</button>
-        </Link>
+        </a>
         <a href="mailto:kanki.dev@gmail.com">
           <button>Contact</button>
         </a>
